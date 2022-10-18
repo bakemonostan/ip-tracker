@@ -5,28 +5,29 @@
     <!-- flex item one -->
     <div class="flex flex-col">
       <h2 class="text-xs mb-2 uppercase">IP Address</h2>
-      <span class="text-2xl">8.8.8.8</span>
+      <span class="text-2xl">{{ ipDetails.address }}</span>
     </div>
     <!-- flex item two -->
     <div class="flex flex-col">
       <h2 class="text-xs mb-2 uppercase">Location</h2>
-      <span class="text-2xl">Lagos</span>
+      <span class="text-2xl">{{ ipDetails.state }}</span>
     </div>
     <!-- flex item three -->
     <div class="flex flex-col">
       <h2 class="text-xs mb-2 uppercase">Timezone</h2>
-      <span class="text-2xl">UTC -07:00</span>
+      <span class="text-2xl">{{ ipDetails.timezone }}</span>
     </div>
     <!-- flex item four -->
     <div class="flex flex-col">
       <h2 class="text-xs mb-2 uppercase">ISP</h2>
-      <span class="text-2xl">Reftek</span>
+      <span class="text-2xl">{{ ipDetails.isp }}</span>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  props: ['ipDetails'],
   setup() {
     return {};
   },
