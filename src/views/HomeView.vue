@@ -3,7 +3,6 @@
     <!-- Search / Results -->
     <div class="flex justify-center relative bg-hero bg-cover px-4 pt-8 pb-32">
       <!-- Search Input -->
-
       <div class="w-full max-w-screen-sm">
         <h1 class="text-white text-center text-3xl pb-4">IP Address Tracker</h1>
         <div class="flex">
@@ -17,13 +16,17 @@
           ></i>
         </div>
       </div>
+      <!-- IPINFO COMPONENT -->
+      <IPInfo />
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import IPInfo from '@/components/IPInfo';
 
-export default {};
+export default {
+  components: { IPInfo },
+};
 </script>
 
